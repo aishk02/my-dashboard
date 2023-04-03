@@ -4,7 +4,7 @@ import ResponsiveLine from './components/ResponsiveLine';
 
 const HomePage = ({ data }) => {
   return (
-    <div>
+    <div style={{ display: 'flex', justifyContent: 'center' }}>
       <ResponsiveBar data={data} />
       <ResponsiveLine data={data} />
     </div>
