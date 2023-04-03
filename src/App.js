@@ -11,9 +11,9 @@ import Sidebar from "./components/Sidebar";
 const styles = {
   container: {
     backgroundColor: 'aliceblue',
-    padding: '50px',
+    padding: '50px 200px',
     maxWidth: '1500px',
-    margin: '10px auto',
+    margin: 'auto',
     display: 'inline',
     justifyContent: 'space-between',
     alignItems: 'center',
