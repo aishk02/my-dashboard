@@ -4,7 +4,7 @@ import data from "../data";
 
 const BarChart = () => {
   return (
-    <div style={{ height: "400px" }}>
+    <div style={{ height: "400px", width: "600px" }}>
       <ResponsiveBar
         data={data[0].data}
         keys={["y"]}
