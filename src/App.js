@@ -6,7 +6,7 @@ import data from "./data";
 import HomePage from "./HomePage";
 import { Container } from '@material-ui/core';
 import Header from './components/Header';
-import Sidebar from "./components/Sidebar";
+//import Sidebar from "./components/Sidebar";
 
 const styles = {
   container: {
@@ -27,7 +27,6 @@ function App() {
     <div className="App" style={{ display: 'flex', justifyContent: 'center' }}>
     <Container style={styles.container}>
     <Header />
-    <Sidebar />
       <Routes>
           <Route path="/" element={<HomePage />} />
           <Route

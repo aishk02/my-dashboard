@@ -4,7 +4,7 @@ import ResponsiveLine from './components/ResponsiveLine';
 
 const HomePage = ({ data }) => {
   return (
-    <div style={{ display: 'flex'}}>
+    <div style={{ display: 'flex',color: "white", boxShadow: "2px 2px 5px black" , margin: "30px"}}>
       <ResponsiveBar data={data} />
       <ResponsiveLine data={data} />
     </div>
