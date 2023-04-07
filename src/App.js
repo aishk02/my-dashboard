@@ -10,14 +10,12 @@ import Header from './components/Header';
 
 const styles = {
   container: {
-    backgroundColor: 'aliceblue',
-    padding: '50px 200px',
-    maxWidth: '1500px',
-    margin: 'auto',
+    padding: '20px',
+    margin: '0',
     display: 'inline',
     justifyContent: 'space-between',
     alignItems: 'center',
-    flexWrap: 'wrap',
+    flexWrap: 'wrap'
   }
 };
 
@@ -38,6 +36,13 @@ function App() {
             element={<ResponsiveLine data={data} />}
           />
       </Routes>
+      </Container>
+    </div>
+    <div className="App" style={{ display: 'flex', justifyContent: 'center' }}>
+    <Container style={styles.container}>
+    <Routes>
+          <Route path="/" element={<HomePage />} />
+          </Routes>
       </Container>
     </div>
   </Router>

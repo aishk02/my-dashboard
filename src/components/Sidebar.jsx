@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 function Sidebar() {
   return (
-    <div style={{ width: "240px", backgroundColor: "#eee", height: "100vh" }}>
+    <div style={{ width: "240px", backgroundColor: "#212529", height: "100vh" }}>
       <ul style={{ listStyle: "none", padding: "0" }}>
         <li>
           <Link to="/">Home</Link>

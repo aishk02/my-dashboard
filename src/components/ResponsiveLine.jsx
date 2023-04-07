@@ -6,7 +6,15 @@ import data from "../data";
 
 const LineChart = () => {
   return (
-    <div style={{ height: "400px",  width: "600px" }}>
+    <div style={{ height: "325px",  width: "600px" }}>
+      <h1 style={{ 
+        fontSize: '15px', 
+        fontWeight: 'bold',
+        color: 'black', 
+        margin: '0px',
+        paddingLeft: '20px',
+        
+      }}>Line Chart</h1>
       <ResponsiveLine
         data={data}
         margin={{ top: 50, right: 110, bottom: 50, left: 60 }}
