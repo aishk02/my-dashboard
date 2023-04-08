@@ -21,32 +21,26 @@ const styles = {
 
 function App() {
   return (
-  <Router>
-    <div className="App" style={{ display: 'flex', justifyContent: 'center' }}>
-    <Container style={styles.container}>
-    <Header />
-      <Routes>
-          <Route path="/" element={<HomePage />} />
-          <Route
-            path="/bar-chart"
-            element={<ResponsiveBar data={data} />}
-          />
-          <Route
-            path="/line-chart"
-            element={<ResponsiveLine data={data} />}
-          />
-      </Routes>
-      </Container>
-    </div>
-    <div className="App" style={{ display: 'flex', justifyContent: 'center' }}>
-    <Container style={styles.container}>
-    <Routes>
-          <Route path="/" element={<HomePage />} />
+    <Router>
+      <div className="App" style={{ display: 'flex', justifyContent: 'center' }}>
+        <Container style={styles.container}>
+          <Header />
+          <Routes>
+            <Route path="/" element={<HomePage />} />
+            <Route path="/bar-chart" element={<ResponsiveBar data={data} />} />
+            <Route path="/line-chart" element={<ResponsiveLine data={data} />} />
           </Routes>
-      </Container>
-    </div>
-  </Router>
-);
+        </Container>
+      </div>
+      <div className="App" style={{ display: 'flex', justifyContent: 'center' }}>
+        <Container style={{ ...styles.container, marginTop: 0 }}>
+          <Routes>
+            <Route path="/" element={<HomePage />} />
+          </Routes>
+        </Container>
+      </div>
+    </Router>
+  );
 }
 
 export default App;

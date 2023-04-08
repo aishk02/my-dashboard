@@ -1,6 +1,7 @@
 import React from "react";
 import { ResponsiveBar } from "@nivo/bar";
 import data from "../data";
+import { Link } from 'react-router-dom';
 
 const BarChart = () => {
   return (
@@ -12,7 +13,10 @@ const BarChart = () => {
         margin: '0px',
         paddingLeft: '20px',
         
-      }}>Bar Chart</h1>
+      }}>
+        <Link style={{textDecoration: 'none', color:'black'}} to="/bar-chart">
+          Bar Chart</Link>
+      </h1>
      
       <ResponsiveBar
         data={data[0].data}

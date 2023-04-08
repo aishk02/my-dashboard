@@ -3,6 +3,7 @@
 import React from "react";
 import { ResponsiveLine } from "@nivo/line";
 import data from "../data";
+import { Link } from 'react-router-dom';
 
 const LineChart = () => {
   return (
@@ -12,9 +13,11 @@ const LineChart = () => {
         fontWeight: 'bold',
         color: 'black', 
         margin: '0px',
-        paddingLeft: '20px',
-        
-      }}>Line Chart</h1>
+        paddingLeft: '20px', 
+      }}>
+        <Link style={{textDecoration: 'none', color:'black'}} to="/line-chart">
+          Line Chart</Link>
+      </h1>
       <ResponsiveLine
         data={data}
         margin={{ top: 50, right: 110, bottom: 50, left: 60 }}
